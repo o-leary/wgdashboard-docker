@@ -1,3 +1,3 @@
-cd /etc/wireguard/src
+cd /etc/wgdashboard/src
 ./wgd.sh start
 sleep infinity
