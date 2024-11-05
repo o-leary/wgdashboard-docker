@@ -7,7 +7,7 @@ services:
     stdin_open: true
     tty: true
     ports:
-      - "8087:10086"
+      - "10086:10086"
       - "51820:51820/udp"
     restart: unless-stopped
     cap_add:
