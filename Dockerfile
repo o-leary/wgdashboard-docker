@@ -1,4 +1,5 @@
 FROM ubuntu:noble
+USER root
 ENV TZ="Pacific/Auckland"
 
 RUN apt-get update
