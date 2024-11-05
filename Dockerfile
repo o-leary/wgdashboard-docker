@@ -13,5 +13,5 @@ RUN sysctl -p /etc/sysctl.conf
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /etc/wgdashboard/src
-CMD bash ./wgd.sh start
+COPY entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
