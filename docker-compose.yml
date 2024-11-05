@@ -10,3 +10,5 @@ services:
       - "8087:10086"
       - "51820:51820/udp"
     restart: unless-stopped
+    cap_add:
+      - NET_ADMIN
