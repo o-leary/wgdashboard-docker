@@ -1,0 +1,12 @@
+services:
+  wgdashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: wgdashboard
+    stdin_open: true
+    tty: true
+    ports:
+      - "8087:10086"
+      - "51820:51820"
+    restart: unless-stopped
