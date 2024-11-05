@@ -3,7 +3,7 @@ USER root
 ENV TZ="Pacific/Auckland"
 
 RUN apt-get update
-RUN apt-get install curl nano git wireguard wireguard-tools net-tools ca-certificates python3 python3-pip python3-venv --no-install-recommends -y
+RUN apt-get install curl sudo nano git wireguard wireguard-tools net-tools ca-certificates python3 python3-pip python3-venv --no-install-recommends -y
 
 RUN git clone -q https://github.com/donaldzou/WGDashboard.git /etc/wgdashboard
 RUN cd /etc/wgdashboard/src
