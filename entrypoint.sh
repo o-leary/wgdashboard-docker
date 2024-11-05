@@ -7,5 +7,6 @@ if [ ! -f /etc/wgdashboard/src/wgd.sh ]; then
 fi
 
 cd /etc/wgdashboard/src
+rm gunicorn.pid
 ./wgd.sh start
 sleep infinity
