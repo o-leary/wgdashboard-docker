@@ -14,4 +14,4 @@ RUN sysctl -p /etc/sysctl.conf
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /etc/wgdashboard/src
-CMD bash sudo ./wgd.sh start
+CMD bash ./wgd.sh start
